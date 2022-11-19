@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap');
 
 /*
 =============== 
@@ -43,8 +43,8 @@ Variables
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -206,6 +206,7 @@ Slider
 .slide-img {
   height: 100%;
   object-fit: cover;
+  position: absolute;
 }
 .slide h1 {
   font-size: 5rem;
@@ -225,7 +226,7 @@ Slider
 }
 .slide:nth-child(3) {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./img-2.jpeg") center/cover no-repeat;
+    url('./img-2.jpeg') center/cover no-repeat;
 }
 .btn-container {
   display: flex;
@@ -264,19 +265,22 @@ Slider
     height: 65vh;
   }
 }
-/* .slide:nth-child(1){
+/* 
+.slide:nth-child(1) {
   left: 0;
 }
-.slide:nth-child(2){
+.slide:nth-child(2) {
   left: 100%;
 }
-.slide:nth-child(3){
+.slide:nth-child(3) {
   left: 200%;
 }
-.slide:nth-child(4){
+.slide:nth-child(4) {
   left: 300%;
 }
-.slide{
+.slide {
   transform: translateX(-100%);
-} */
+}
+*/
+
 /* negative value moves to left */
